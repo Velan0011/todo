@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"><div>
+        <div id="incon">
+        <h2>Register</h2>
+    <form action="register" method="POST">
+        {% csrf_token %}
+       <b>ENTER USERNAME :</b><input type="text" class="inp" name="username" required>
+       <b>ENTER GMAIL :</b><input type="text" name="email" class="inp" required>
+       <b>ENTER PASSWORD :</b><input type="text" name="password" class="inp" required>
+       <input type="submit" class="inp" value="register">
+    </form>
+        <a href="login">already have an account?</a></div>
+    </div>
+  
+    
+</body><style>.inp:hover{color:aqua;}    html,body{height:100%;padding:0;margin:0;width:100%}form{ 
+    display:flex;
+flex-direction: column;justify-content: center;}.inp{margin-bottom: 10px;width:300px;}
+#container{background-color:black;height:100%;display:flex;justify-content: center;align-items: center;
+}#incon{background-color:white;padding:10px;border-radius:10px;}
+a{text-decoration: none;}body{background-color: aqua;}
+ </style>
+</html>

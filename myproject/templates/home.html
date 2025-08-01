@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/home.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <form action="home2" method="GET">
+        <label for="name1">ENTER NAME 1 :</label><input type="text" name="name1" id="name1">
+        <label for="name2">ENTER NAME 2:</label><input type="text" name="name2" id="name2">
+        <input type="submit" placeholder="CHECK">
+    </form>
+  
+    </div>
+  <div>
+    {% for message in messages %}
+    {% if no in extra_tags %}
+    <h2>{{message}}</h2>
+    {% endif %}
+    {% endfor %}
+  </div>  
+</body>
+</html>
